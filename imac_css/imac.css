@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: dimgray;
+  color: aliceblue;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+header h1 {
+  text-transform: uppercase;
+  margin: 40px 0 10px 40px;
+}
+header h2 {
+  text-transform: lowercase;
+  font-size: 6px;
+  position: relative;
+  top: -16px;
+  right: -80px;
+}
+
+header h1 span, header h2 span {
+  color: cadetblue;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  border-radius: 50px;
+  background-color: rgba(17, 17, 17, 0.411);
+}
+nav li {
+  list-style: none;
+  margin: 0 16px;
+  display: inline-block;
+  line-height: 3;
+}
+nav li a {
+  text-decoration: none;
+  color: cadetblue;
+  text-transform: uppercase;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+.banner img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+section {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(17, 17, 17, 0.411);
+  color: cadetblue;
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 6px;
+}
+section article {
+  display: inline-block;
+  margin: 10px;
+  width: 30%;
+}
+section .learn {
+  width: 80%;
+  height: 300px;
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  background-color: dimgray;
+  border-radius: 20px;
+  position: relative;
+  top: 200px;
+  left: 120px;
+  box-shadow: 12px 10px 50px #111;
+}
+section .learn h1 {
+  line-height: 1.6;
+  text-align: center;
+}
+section .learn .lr {
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  left: 200px;
+}
+section .learn .lr img {
+  position: relative;
+  left: 40px;
+}
+
+#sec1 {
+  height: auto;
+}
+#sec1 h1, #sec1 .dev {
+  margin-top: 80px;
+  text-align: center;
+}
+#sec1 .dev {
+  width: 300px;
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  background-color: dimgray;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 20px 40px;
+  box-shadow: 12px 10px 50px #111;
+}
+
+#sec2 {
+  height: 700px;
+}
+#sec2 h1 {
+  text-align: center;
+  line-height: 1.6;
+  text-decoration: underline;
+}
+#sec2 .kif {
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  height: 300px;
+  margin: 20px 10px;
+}
+#sec2 .kif img {
+  margin: 0 60px;
+  box-shadow: 12px 10px 50px #111;
+}
+
+.container1 {
+  max-width: 700px;
+  height: 600px;
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  border-radius: 6px;
+  background-color: dimgray;
+  box-shadow: 12px 10px 50px #111;
+  margin: 0 auto;
+  padding: 10px;
+}
+.container1 .title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form .user_details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+form .user_details .details_box {
+  width: calc(50% - 40px);
+  margin: 20px 0 12px 0;
+}
+form .user_details .details_box .user_title {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+form .user_details .details_box input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  height: 40px;
+  padding-left: 20px;
+  border-bottom-width: 5px;
+  font-size: 16px;
+}
+form .user_details .details_box input:focus, form .user_details .details_box input :valid {
+  border-color: cadetblue;
+}
+
+.gender_details input[type=radio] {
+  display: none;
+}
+.gender_details .gender_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.gender_details .gender_category {
+  display: flex;
+}
+.gender_details .gender_category label {
+  display: flex;
+  margin: 10px 40px;
+}
+.gender_details .gender_category label .dot {
+  width: 12px;
+  height: 12px;
+  background-color: aliceblue;
+  border: 1px solid rgba(17, 17, 17, 0.411);
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+#dot-1:checked ~ .gender_category label .one {
+  background-color: rgba(17, 17, 17, 0.411);
+  border-color: aliceblue;
+  border-width: 3px;
+}
+
+#dot-2:checked ~ .gender_category label .two {
+  background-color: rgba(17, 17, 17, 0.411);
+  border-color: aliceblue;
+  border-width: 3px;
+}
+
+.boutton {
+  width: 100%;
+}
+.boutton input {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  border-width: 5px;
+  font-size: 18px;
+  color: cadetblue;
+}
+.boutton input:focus, .boutton input :valid {
+  border-color: cadetblue;
+}
+
+/*# sourceMappingURL=imac.css.map */

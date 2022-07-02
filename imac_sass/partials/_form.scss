@@ -1,0 +1,110 @@
+.container1{
+        max-width: 700px;
+        height: 600px;
+        border: $bordure;
+        border-radius: $arrondi;
+        background-color: $color;
+        box-shadow: $ombre;
+        margin: 0 auto;
+        padding: 10px;
+    .title{
+        text-transform: uppercase;
+        font: {
+            size: 20px;
+            weight: 700;
+        }
+    }
+}
+form{
+    .user_details{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .details_box{
+            width: calc($large / 2 - 40px);
+            margin: 20px 0 12px 0;
+            .user_title{
+                font-size: 20px;
+                display: block;
+                margin-bottom: 10px;
+            }
+            input{
+                width: $large;
+                outline: none;
+                border: $borform;
+                height: 40px;
+                padding-left: 20px;
+                border-bottom-width: 5px;
+                font-size: 16px;
+                &:focus, :valid{
+                    border-color: $color3;
+                }
+            }
+        }
+    }
+}
+.gender_details{
+    input[type= "radio"]{
+        display: none;
+    }
+    .gender_title{
+        font: {
+            size: 20px;
+            weight: 700;
+        }
+    }
+    .gender_category{
+        display: flex;
+        label{
+            display: flex;
+            margin: 10px 40px;
+            .dot{
+                width: 12px;
+                height: 12px;
+                background-color: $color1;
+                border: $bordure;
+                border-radius: $arrondi1;
+                margin: 0 6px;
+            }
+        }
+    }
+}
+#dot-1:checked ~{
+    .gender_category{
+        label{
+            .one{
+                background-color: $color4;
+                border-color: $color1;
+                border-width: $epaiseur;
+            }
+        }
+    }
+}
+#dot-2:checked ~ {
+    .gender_category{
+        label{
+            .two{
+                background-color: $color4;
+                border-color: $color1;
+                border-width: $epaiseur;
+            }
+        }
+    }
+}
+.boutton{
+    width: $large;
+    input{
+        height: 45px;
+        width: $large;
+        border: $borform;
+        outline: none;
+        border-width: 5px;
+        font-size: 18px;
+        color: $color3;
+        &:focus,:valid{
+            border-color: $color3;
+        }
+    }
+}
+ 
+  
